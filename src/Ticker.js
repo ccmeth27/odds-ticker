@@ -1,33 +1,41 @@
 import React from 'react'
 import Odds from './Odds'
+import Scores from './Scores'
+import Fantasy from './Fantasy'
+import HomeTicker from './HomeTicker'
+import Notfound from './Notfound'
+import { Route, Switch, Redirect } from 'react-router-dom'
+
 
 
 
 class Ticker extends React.Component {
 
-    render(){
-        return (
-            <div className="scroll-box">
-                <Odds games={this.props.games} filteredStateID={this.props.filteredStateID}/>
-            </div>
-    );
-}
-}
-
-export default Ticker
-    // shouldComponentUpdate(nextProps, nextState){
-    //   console.log(nextProps.value)
-    //   return Math.abs(nextProps.value - this.props.value) > 5
-    // }
+    renderOdds = () => {
+        return <Odds key={this.props.games.ID} games={this.props.games} /> 
+    }
     
-    //   componentDidUpdate(prevProps, prevState){
-    //     if (prevProps.value > this.props.value){
-    //       this.setState({
-    //         color: "red"
-    //       })
-    //     } else if (prevProps.value < this.props.value){
-    //       this.setState({
-    //         color: "green"
-    //       })
-    //     }
-    //   }
+    renderScores = () => {
+        return <Scores key={this.props.scores.GameKey} scores={this.props.scores}/>
+    }
+
+    renderFantasy = () => {
+        return <Fantasy key={this.props.fantasyStats.PlayerID} fantasyStats={this.props.fantasyStats}/>
+    }    
+    
+    render () {
+        return (
+            <div>
+                <Switch>
+                    <Route path="/odds" render={this.renderOdds} />
+                    <Route path="/live-scores" render={this.renderScores}/>
+                    <Route path="/fantasy" render={this.renderFantasy} />
+                    <Route exact path="/" component={HomeTicker} />
+                    <Route component={Notfound} />
+                </Switch>
+            </div>
+                )
+            }
+        }
+        
+export default Ticker;

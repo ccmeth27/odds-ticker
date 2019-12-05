@@ -7,8 +7,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.current-sport-text {
+  padding-right: 10px;
+}
+
+.links {
+  padding-right: 10px;
+}
+.active {
+  color: white
+}
+
 .title {
+  display: block;
   color: rgb(83, 16, 146);
+
+}
+
+.not-found {
+  padding-left: 10%;
+  padding-right: 10%
 }
 
  .current-sport{
@@ -32,7 +56,7 @@ body {
 
 .countdown{
   display: inline-flex;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   align-items: flex-end;
   align-items: center;
   color: #531092;
@@ -41,20 +65,19 @@ body {
 .ticker-container{
   display: inline;
   align-content: center;
-  overflow: hidden;
   color: #531092;
 }
 
 .marquee {
   display: inline-flex;
   flex-direction: row;
-  overflow: hidden;
   padding-top: 50px;
   padding-right: 20px;
   
 }
 
 .marquee-container {
+  display: flex;
   border: black;
   color: red;
   font-family: 'Press Start 2P', cursive;
@@ -72,7 +95,6 @@ body {
   align-items: left;
   flex-direction: column;
   padding-right: 20px;
-  padding-left: 40px;
   padding-bottom: 10px;
 }
 
@@ -80,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-right: 20px;
   padding-bottom: 10px;
 }
@@ -90,16 +112,44 @@ body {
   flex-direction: column;
   align-items: center;
   padding-left: 20px;
-  padding-right: 60px;
+  padding-right: 75px;
   padding-bottom: 10px;
 }
-/* .start-time {
-  display: block;
+
+.fantasy-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+.time-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
+.team-scores {
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-} */
+  padding-bottom: 10px;
+}
+
+.fantasy-points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
 
 .dropbtn {
   background-color: rgb(83, 16, 146);
@@ -116,6 +166,7 @@ body {
   position: relative;
   display: inline-flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .dropdown-content {

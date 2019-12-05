@@ -1,40 +1,39 @@
 import React from "react";
 
-class Odds extends React.Component {
-
-
-    loadAllGames = () => {
-        let gameArray = {}
-        return Object.keys(this.props.games).map(game => {
-            gameArray = this.props.games[game]
-        //     console.log(gameArray)
+function Odds (props) {
+    const { games } = props
+    
+    const renderGames = () => {
+        console.log(games)
+        return games.map(game => {
             return (
                 <div className="marquee">
                     <div className="teams" >
-                        <h1>{gameArray.AwayTeam}</h1>
-                        <h1>{gameArray.HomeTeam}</h1>
+                        <h1>{game.AwayTeamName}</h1>
+                        <h1>{game.HomeTeamName}</h1>
                     </div>
                     <div className="current-odds">
-                        <h1>{gameArray.Odds[0].TotalNumber}</h1>
-                        <h1>{gameArray.Odds[0].PointSpreadHome}</h1>
+                        <h1>{game.AlternateMarketPregameOdds[0].OverUnder}</h1>
+                        <h1>{game.AlternateMarketPregameOdds[0].HomePointSpread}</h1>
                     </div>
                     <div className="moneylines">
-                        <h1>{gameArray.Odds[0].MoneyLineAway}</h1>
-                        <h1>{gameArray.Odds[0].MoneyLineHome}</h1>
+                        <h1>{game.AlternateMarketPregameOdds[0].AwayMoneyLine}</h1>
+                        <h1>{game.AlternateMarketPregameOdds[0].HomeMoneyLine}</h1>
                     </div>
                 </div>
             )
         })
-        
     }
 
-    render() {
+    // render () {
         return(
-            <marquee height="225px" className="marquee-container">
-                    {this.loadAllGames()}
+            <marquee height="225px" hspace="0px" className="marquee-container" >
+                {renderGames()}
             </marquee>
         )
-    }
+    // }
+    
+
 }
 export default Odds
   

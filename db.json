@@ -201,7 +201,7 @@
     },{
     "ID":"abc11adb-818a-47aa-81d1-f4f59d75708d",
     "HomeTeam":"South Carolina",
-    "AwayTeam":"Georgia",
+    "AwayTeam":"Missouri",
     "Sport":5,
     "MatchTime":"2019-12-05T06:05:00Z",
     "Odds":[{
@@ -299,7 +299,7 @@
         "UnderLine":-105
         }]
     },{
-    "ID":"abc15adb-818a-47aa-81d1-f4f59d75708d",
+    "ID":"abc16adb-818a-47aa-81d1-f4f59d75708d",
     "HomeTeam":"New Orleans Saints",
     "AwayTeam":"San Francisco 49ers",
     "Sport":2,
@@ -317,66 +317,107 @@
         "TotalNumber":44,
         "OverLine":-115,
         "UnderLine":-105
-                    }]
-    },{
-        "ID":"abc10adb-818a-47aa-81d1-f4f59d75708d",
-        "HomeTeam":"Ohio State",
-        "AwayTeam":"Michigan",
-        "Sport":5,
-        "MatchTime":"2019-12-05T06:05:00Z",
-        "Odds":[{
-            "ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f",
-            "EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d",
-            "SiteID":3,
-            "MoneyLineHome":-152,
-            "MoneyLineAway":132,
-            "PointSpreadHome":-16.0,
-            "PointSpreadAway":16.0,
-            "PointSpreadHomeLine":-110,
-            "PointSpreadAwayLine":-110,
-            "TotalNumber":60.5,
-            "OverLine":-110,
-            "UnderLine":-110
             }]
     },{
-        "ID":"abc10adb-818a-47aa-81d1-f4f59d75708d",
-        "HomeTeam":"Oregon",
-        "AwayTeam":"Utah",
-        "Sport":5,
-        "MatchTime":"2019-12-05T06:05:00Z",
-        "Odds":[{
-            "ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f",
-            "EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d",
-            "SiteID":3,
-            "MoneyLineHome":-250,
-            "MoneyLineAway":200,
-            "PointSpreadHome":-6.5,
-            "PointSpreadAway":6.5,
-            "PointSpreadHomeLine":-110,
-            "PointSpreadAwayLine":-110,
-            "TotalNumber":47.5,
-            "OverLine":-110,
-            "UnderLine":-110
-            }]
+    "ID":"abc17adb-818a-47aa-81d1-f4f59d75708d",
+    "HomeTeam":"LSU",
+    "AwayTeam":"Georgia",
+    "Sport":5,
+    "MatchTime":"2019-12-05T06:05:00Z",
+    "Odds":[{
+        "ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f",
+        "EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d",
+        "SiteID":3,
+        "MoneyLineHome":-300,
+        "MoneyLineAway":240,
+        "PointSpreadHome":-7.0,
+        "PointSpreadAway":7.0,
+        "PointSpreadHomeLine":-110,
+        "PointSpreadAwayLine":-110,
+        "TotalNumber":55.5,
+        "OverLine":-110,
+        "UnderLine":-110
+        }]
     },{
-        "ID":"abc10adb-818a-47aa-81d1-f4f59d75708d",
-        "HomeTeam":"Oklahoma",
-        "AwayTeam":"Baylor",
-        "Sport":5,
-        "MatchTime":"2019-12-05T06:05:00Z",
-        "Odds":[{
-            "ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f",
-            "EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d",
-            "SiteID":3,
-            "MoneyLineHome":-330,
-            "MoneyLineAway":250,
-            "PointSpreadHome":-8.5,
-            "PointSpreadAway":8.5,
-            "PointSpreadHomeLine":-110,
-            "PointSpreadAwayLine":-110,
-            "TotalNumber":62.5,
-            "OverLine":-110,
-            "UnderLine":-110
-            }]
+    "ID":"abc18adb-818a-47aa-81d1-f4f59d75708d",
+    "HomeTeam":"Oregon",
+    "AwayTeam":"Utah",
+    "Sport":5,
+    "MatchTime":"2019-12-05T06:05:00Z",
+    "Odds":[{
+        "ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f",
+        "EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d",
+        "SiteID":3,
+        "MoneyLineHome":-250,
+        "MoneyLineAway":200,
+        "PointSpreadHome":-6.5,
+        "PointSpreadAway":6.5,
+        "PointSpreadHomeLine":-110,
+        "PointSpreadAwayLine":-110,
+        "TotalNumber":47.5,
+        "OverLine":-110,
+        "UnderLine":-110
+        }]
+    },{
+    "ID":"abc19adb-818a-47aa-81d1-f4f59d75708d",
+    "HomeTeam":"Oklahoma",
+    "AwayTeam":"Baylor",
+    "Sport":5,
+    "MatchTime":"2019-12-05T06:05:00Z",
+    "Odds":[{
+        "ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f",
+        "EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d",
+        "SiteID":3,
+        "MoneyLineHome":-330,
+        "MoneyLineAway":250,
+        "PointSpreadHome":-8.5,
+        "PointSpreadAway":8.5,
+        "PointSpreadHomeLine":-110,
+        "PointSpreadAwayLine":-110,
+        "TotalNumber":62.5,
+        "OverLine":-110,
+        "UnderLine":-110
+        }]
+    },{
+    "ID":"abc20adb-818a-47aa-81d1-f4f59d75708d",
+    "HomeTeam":"Boston Bruins",
+    "AwayTeam":"Carolina Huricanes",
+    "Sport":4,
+    "MatchTime":"2019-12-05T06:05:00Z",
+    "Odds":[{
+        "ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f",
+        "EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d",
+        "SiteID":3,
+        "MoneyLineHome":-150,
+        "MoneyLineAway":135,
+        "PointSpreadHome":-1.5,
+        "PointSpreadAway":1.5,
+        "PointSpreadHomeLine":165,
+        "PointSpreadAwayLine":-185,
+        "TotalNumber":5,
+        "OverLine":-110,
+        "UnderLine":-110
+        }]
+    },{
+    "ID":"abc21adb-818a-47aa-81d1-f4f59d75708d",
+    "HomeTeam":"Florida Panthers",
+    "AwayTeam":"Minnesota Wild",
+    "Sport":4,
+    "MatchTime":"2019-12-05T06:05:00Z",
+    "Odds":[{
+        "ID":"f3ae1953-bb3a-49f0-b745-8491f034f08f",
+        "EventID":"abc2a6db-818a-47aa-81d1-f4f59d75708d",
+        "SiteID":3,
+        "MoneyLineHome":-125,
+        "MoneyLineAway":115,
+        "PointSpreadHome":-1.5,
+        "PointSpreadAway":1.5,
+        "PointSpreadHomeLine":195,
+        "PointSpreadAwayLine":-220,
+        "TotalNumber":5.5,
+        "OverLine":-110,
+        "UnderLine":-110
+        }]
     }
 ]}
+
