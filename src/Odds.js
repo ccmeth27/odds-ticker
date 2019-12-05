@@ -4,7 +4,6 @@ function Odds (props) {
     const { games } = props
     
     const renderGames = () => {
-        console.log(games)
         return games.map(game => {
             return (
                 <div className="marquee">
@@ -25,14 +24,11 @@ function Odds (props) {
         })
     }
 
-    // render () {
-        return(
-            <marquee height="225px" hspace="0px" className="marquee-container" >
-                {renderGames()}
-            </marquee>
-        )
-    // }
-    
+    return(
+        <marquee height="225px" hspace="0px" className="marquee-container" >
+            {renderGames()}
+        </marquee>
+    )
 
 }
 export default Odds

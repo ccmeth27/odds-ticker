@@ -34,8 +34,8 @@ class Ticker extends React.Component {
                     <Route component={Notfound} />
                 </Switch>
             </div>
-                )
-            }
+            )
         }
+    }
         
 export default Ticker;

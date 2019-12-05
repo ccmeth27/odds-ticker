@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="App">  
         <header>
-          <h1 className="title">Sports Ticker</h1>
+          <h1 className="title">The Sports Marquee</h1>
         </header>
         <TickerContainer />
       </div>

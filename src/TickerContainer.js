@@ -4,6 +4,7 @@ import Selector from './Selector'
 import Clock from './Clock'
 import ReactCountdownClock from 'react-countdown-clock'
 
+
 class TickerContainer extends React.Component {
     
 
@@ -14,6 +15,7 @@ class TickerContainer extends React.Component {
         games: [],
         scores: [],
         fantasyStats: [],
+        date: new Date
     }
     // setDate = () => {
     //     let tempDate = new Date()
@@ -23,14 +25,12 @@ class TickerContainer extends React.Component {
     //     })
     // }
 
-
-
     handleClick = (e) => {
         let selectedSport = e.target.text;
         switch (selectedSport) {
             case 'NCAAB':
                 this.setState({
-                    sportSelector: 'ncaab',
+                    sportSelector: 'cbb',
                     sportDisplay: 'NCAAB',
                     filteredSportID: 3
                 })
@@ -58,7 +58,7 @@ class TickerContainer extends React.Component {
                 break;
             case 'NCAAF':
                 this.setState({
-                    sportSelector: 'ncaaf',
+                    sportSelector: 'cfb',
                     sportDisplay: 'NCAAF',
                     filteredSportID: 5
                 })
@@ -78,7 +78,8 @@ class TickerContainer extends React.Component {
     }
 
     fetchOdds() {
-        let urlKey = '9b9d34020bc54c4db706f76c9cba3a6f'
+        const nflKey = '03acceecb3524161ac420bb653e6803c'
+        const nbaKey = '9b9d34020bc54c4db706f76c9cba3a6f'
         // fetch('http://localhost:3000/matches')
         fetch(`https://api.sportsdata.io/v3/nfl/odds/json/AlternateMarketGameOddsByWeek/2019REG/14?key=03acceecb3524161ac420bb653e6803c`)
         .then(resp => resp.json())
@@ -88,9 +89,10 @@ class TickerContainer extends React.Component {
             })
         })
     }
-
+    
     fetchScores() {
-        // const urlKey = '9b9d34020bc54c4db706f76c9cba3a6f'
+        const nflKey = '03acceecb3524161ac420bb653e6803c'
+        const nbaKey = '9b9d34020bc54c4db706f76c9cba3a6f'
         // let tempDate = new Date()
         // let date = tempDate.getFullYear() + '-' + (tempDate.getMonth()+1) + '-' + tempDate.getDate();
         // fetch("https://api.sportsdata.io/v3/nfl/scores/json/ScoresByWeek/2019/13?key=03acceecb3524161ac420bb653e6803c")
@@ -104,7 +106,7 @@ class TickerContainer extends React.Component {
     }
 
     fetchFantasyStats() {
-        // const urlKey = '9b9d34020bc54c4db706f76c9cba3a6f'
+        const nflKey = '03acceecb3524161ac420bb653e6803c'
         fetch(`https://api.sportsdata.io/v3/nfl/stats/json/DailyFantasyPoints/2019-DEC-3?key=03acceecb3524161ac420bb653e6803c`)
         .then(resp => resp.json())
         .then(fantasyStats => {

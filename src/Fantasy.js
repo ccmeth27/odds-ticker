@@ -21,10 +21,10 @@ function Fantasy (props) {
         })
     }
 
-        return(
-            <marquee height="225px" hspace="0px" className="marquee-container" >
-                {renderStats()}
-            </marquee>
+    return(
+        <marquee height="225px" hspace="0px" className="marquee-container" >
+            {renderStats()}
+        </marquee>
     )
 }
 export default Fantasy
