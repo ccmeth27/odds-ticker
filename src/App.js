@@ -3,14 +3,7 @@ import { withRouter } from 'react-router-dom'
 import './App.css';
 import TickerContainer from "./TickerContainer"
 
-
-
-
 class App extends React.Component {
-
-  
-
-  
 
   render(){
     return (
@@ -22,7 +15,6 @@ class App extends React.Component {
       </div>
     );
   }
-  
 }
 
 export default withRouter(App);
