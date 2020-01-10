@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, NavLink, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './index.css';
-import App from './App';
-import Odds from './Odds'
-import Scores from './Scores'
-import Fantasy from './Fantasy'
-import Notfound from './Notfound'
-import * as serviceWorker from './serviceWorker';
+import App from './src/App';
+import Odds from './src/Odds'
+import Scores from './src/Scores'
+import Fantasy from './src/Fantasy'
+import Notfound from './src/Notfound'
+import * as serviceWorker from './src/serviceWorker';
 
 
    
