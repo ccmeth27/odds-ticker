@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/odds-ticker/static/css/main.ff12fa96.chunk.css",
+    "main.js": "/odds-ticker/static/js/main.2010a9ec.chunk.js",
+    "main.js.map": "/odds-ticker/static/js/main.2010a9ec.chunk.js.map",
+    "runtime-main.js": "/odds-ticker/static/js/runtime-main.c7a0ea53.js",
+    "runtime-main.js.map": "/odds-ticker/static/js/runtime-main.c7a0ea53.js.map",
+    "static/js/2.9199c3be.chunk.js": "/odds-ticker/static/js/2.9199c3be.chunk.js",
+    "static/js/2.9199c3be.chunk.js.map": "/odds-ticker/static/js/2.9199c3be.chunk.js.map",
+    "index.html": "/odds-ticker/index.html",
+    "precache-manifest.c72447601ebd7bf462bd83a5bda6d3f5.js": "/odds-ticker/precache-manifest.c72447601ebd7bf462bd83a5bda6d3f5.js",
+    "service-worker.js": "/odds-ticker/service-worker.js",
+    "static/css/main.ff12fa96.chunk.css.map": "/odds-ticker/static/css/main.ff12fa96.chunk.css.map",
+    "static/media/index.css": "/odds-ticker/static/media/black-ticker-texture.97465a6e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7a0ea53.js",
+    "static/js/2.9199c3be.chunk.js",
+    "static/css/main.ff12fa96.chunk.css",
+    "static/js/main.2010a9ec.chunk.js"
+  ]
+}
